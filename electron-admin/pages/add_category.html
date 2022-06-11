@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="../style.css">
+    <title>Admin panel</title>
+  </head>
+  <body>
+    <h2>Add new category</h2>
+    <h3 id="status" style="color:rgb(90, 122, 122);;text-align:center;display:none;"></h3>
+    <form>
+        <div class="name">
+          <label for="category-name">New category:</label><br>
+          <input type="text" name="category name" id="category-name" placeholder="category Name" required>
+        </div>
+        <div class="sign-up_butt"><br>
+          <input type="submit" value="upload category" id="upload-category">
+        </div>
+      </form>
+  </body>
+</html>

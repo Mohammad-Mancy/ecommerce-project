@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" href="../style.css">
+    <title>Admin panel</title>
+  </head>
+  <body>
+    <h2>Add new item</h2>
+    <h3 id="status" style="color:rgb(90, 122, 122);;text-align:center;display:none;"></h3>
+    <form>
+        <div class="name">
+          <label for="item-name">Name:</label><br>
+          <input type="text" name="item name" id="item-name" placeholder="Item Name" required>
+        </div>
+        <div class="price">
+          <label for="price">price:</label><br>
+          <input name="item price" id="item-price" placeholder="insert price with currency" required></textarea>
+        </div>
+        <div class="category"><br>
+          <select name="category" id="categories">
+            <option>category</option>
+          </select>
+        </div>
+        <div class="image">
+          <label for="image">Upload the item image:</label><br>
+          <input type="file" name="image" id="item-image" required>
+        </div>
+        <div class="sign-up_butt"><br>
+          <input type="submit" value="upload item" id="upload-item">
+        </div>
+      </form>
+  </body>
+</html>

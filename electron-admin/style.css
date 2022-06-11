@@ -1,0 +1,185 @@
+body{
+    height: 90vh;;
+    color: white;
+    background-color:#2c2c54;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:sans-serif;
+
+}
+form{
+    width: 80%;
+    height: auto;
+    background-color: #706fd3;
+    padding: 3%;
+    margin: auto;
+    box-shadow: 0 0 20px #706fd3;
+}
+form input{
+    width: 92%;
+    border: 1px solid;
+    border-radius: 4px;
+    background-color: var(--theme-color);
+    color: #FFF;
+    padding: 10px;
+}
+#upload-item,#upload-category{
+    background-color: #474787;
+    width: 40%;
+    display: block;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 20px;
+    color: #FFF;
+    cursor: pointer;
+    margin: auto;
+}
+#upload-item:hover{
+    background-color: #2c2c54;
+}
+    
+form div{    
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+#categories{
+    width: 92%;
+    padding: 3%;
+    text-align: center;
+    background-color: #474787;
+    color: white;
+    
+}
+
+h2{
+    text-align: center;
+    color: white;
+}
+#item-image{
+    cursor: pointer;
+    background-color: #474787;
+}
+::placeholder {
+    color: white;
+    opacity: 0.5; 
+  }
+
+
+/* login page */
+
+
+body {
+    height: 90vh;;
+    color: white;
+    background-color:#2c2c54;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family:sans-serif;
+  }
+  
+  .required {
+    color: red;
+  }
+  
+  
+  /* sign-in and sign-up pages */
+  
+  
+  .account_issues {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .account_issues .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .account_issues .content {
+    width: 400px;
+    height: auto;
+    background-color: #706fd3;
+    padding: 3%;
+    margin:auto;
+    box-shadow: 0 0 20px #706fd3;
+  }
+  
+  .account_issues .content form .account-header {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .account_issues .content form .account-header h1 {
+    margin-bottom: 5px;
+  }
+  
+  .account_issues .content form > div:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  .account_issues .content form > div label {
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .account_issues .content form > div input:not([type="submit"]) {
+    width: 92%;
+    border: 1px solid ;
+    border-radius: 4px;
+    background-color: var(--theme-color);
+    color: #FFF;
+    padding: 10px;
+  }
+  ::placeholder {
+    color: white;
+    opacity: 0.5; 
+  }
+  
+  .account_issues .content form > div input:not([type="submit"]):focus {
+    outline: 2px solid rgb(78, 78, 78);
+  }
+  
+  .account_issues .content form .user_gender select {
+    display: block;
+    width: 100%;
+    background-color: var(--theme-color);
+    color: #FFF;
+    padding: 10px;
+    border: 1px solid rgb(90, 90, 90);
+    border-radius: 2px;
+  }
+  
+  .account_issues .content form .sign-up_butt input, .account_issues .content form .sign-in_butt input{
+    background-color: #474787;
+    width: 40%;
+    display: block;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 20px;
+    color: #FFF;
+    cursor: pointer;
+    margin: auto;
+  }
+  .account_issues .content form .sign-up_butt input:hover, .account_issues .content form .sign-in_butt input:hover{
+    background-color: #2c2c54;
+  }
+  a{
+    color: #2c2c54;
+    text-decoration: none;
+  }
+  a:hover{
+    color:#474787;
+    text-decoration: none;
+  }
+  .account_issues .content .has-account {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
