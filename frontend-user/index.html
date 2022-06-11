@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>login page</title>
+</head>
+<body>
+    <div class="sign-in account_issues">
+      <div class="container">
+        <div class="content">
+          <form id="signinform" onsubmit="return false;">
+            <div class="sign-in_head account-header">
+              <h1>Discover our items</h1>
+              <p>Let's retrieve your account.</p>
+            </div>
+  
+    
+            <div class="user_email">
+              <label for="email">Email <span class="required">*</span></label><br>
+              <input type="email" name="email" id="email" placeholder="Your email" required>
+            </div>
+  
+            <div class="user_pass">
+              <label for="password">Password <span class="required">*</span></label>
+              <input type="password" name="password" id="password" placeholder="Your password" required>
+            </div>
+  
+            <div class="sign-in_butt">
+              <input type="submit" value="Sign In" id="btn-login">
+            </div>
+          </form>
+  
+          <div class="has-account">
+            <p>New to our application? <a href="./pages/signup.html">Sign Up</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- <script src="./javascript/loginscript.js"></script> -->
+    
+</body>
+</html>

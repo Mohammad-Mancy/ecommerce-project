@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/style.css">
+    <!-- axios script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>signup page</title>
+</head>
+<body>
+    <div class="sign-up account_issues">
+      <div class="container">
+        <div class="content">
+          <form id="signupform" onsubmit="return false;">
+            <div class="sign-up_head account-header">
+              <h1>Discover our items</h1>
+              <p>Let's create your account.</p>
+            </div>
+  
+            <div class="name">
+    
+              <label for="name">Name <span class="required">*</span></label><br>
+              <input type="text" name="name" id="name" placeholder="your name" required>
+    
+            </div>
+    
+            <div class="user_email">
+              <label for="email">Email <span class="required">*</span></label><br>
+              <input type="email" name="email" id="email" placeholder="Your email" required>
+            </div>
+  
+            <div class="user_pass">
+              <label for="password">Password <span class="required">*</span></label>
+              <input type="password" name="password" id="password" placeholder="Create your password" required>
+            </div>
+
+            <div class="user_pass">
+                <label for="confirmation-password">Password confirmation<span class="required">*</span></label>
+                <input type="confirmation-password" name="confirmation-password" id="confirmation-password" placeholder="confirm your password" required>
+              </div>
+  
+            <div class="sign-up_butt">
+              <input type="submit" value="Sign Up" id="signup">
+            </div>
+          </form>
+  
+          <div class="has-account">
+            <p>Already have an account? <a href="./../index.html">Sign In</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="../javascript/signup.js"></script> -->
+    
+</body>
+</html>

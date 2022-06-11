@@ -1,0 +1,237 @@
+/* :root {
+  --theme-color: #2b0505f0;
+  --theme-color-two: #141317;
+  --text-second-color: rgb(70, 70, 70);
+}
+*/
+
+
+body {
+  height: 90vh;;
+  color: white;
+  background-color:#2c2c54;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family:sans-serif;
+}
+
+.required {
+  color: red;
+}
+
+
+/* sign-in and sign-up pages */
+
+
+.account_issues {
+  width: 100%;
+  height: 100%;
+}
+
+.account_issues .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.account_issues .content {
+  width: 400px;
+  height: auto;
+  background-color: #706fd3;
+  padding: 3%;
+  margin:auto;
+  box-shadow: 0 0 20px #706fd3;
+}
+
+.account_issues .content form .account-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.account_issues .content form .account-header h1 {
+  margin-bottom: 5px;
+}
+
+.account_issues .content form > div:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.account_issues .content form > div label {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.account_issues .content form > div input:not([type="submit"]) {
+  width: 92%;
+  border: 1px solid ;
+  border-radius: 4px;
+  background-color: var(--theme-color);
+  color: #FFF;
+  padding: 10px;
+}
+::placeholder {
+  color: white;
+  opacity: 0.5; 
+}
+
+.account_issues .content form > div input:not([type="submit"]):focus {
+  outline: 2px solid rgb(78, 78, 78);
+}
+
+.account_issues .content form .user_gender select {
+  display: block;
+  width: 100%;
+  background-color: var(--theme-color);
+  color: #FFF;
+  padding: 10px;
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 2px;
+}
+
+.account_issues .content form .sign-up_butt input, .account_issues .content form .sign-in_butt input{
+  background-color: #474787;
+  width: 40%;
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bolder;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 20px;
+  color: #FFF;
+  cursor: pointer;
+  margin: auto;
+}
+.account_issues .content form .sign-up_butt input:hover, .account_issues .content form .sign-in_butt input:hover{
+  background-color: #2c2c54;
+}
+a{
+  color: #2c2c54;
+  text-decoration: none;
+}
+a:hover{
+  color:#474787;
+  text-decoration: none;
+}
+.account_issues .content .has-account {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+
+/* ---------------------------------------- */
+/* --------------- header ----------------- */
+/* ---------------------------------------- */
+
+header {
+padding: 1%;
+background-color: var(--theme-color-two);
+color: #FFF;
+}
+
+header .header_content {
+display: flex;
+align-items: center;
+}
+
+header .header_content .logo-wrapper img {
+width: 50px;
+}
+
+header .header_content .profile-sec {
+margin-left: auto;
+display: flex;
+align-items: center;
+font-size: 18px;
+cursor: pointer;
+}
+
+header .header_content .profile-sec img {
+width: 40px;
+border-radius: 50%;
+margin-left: 10px;
+}
+
+/* ---------------------------------------- */
+/* --------------- footer ---------------- */
+/* ---------------------------------------- */
+
+footer {
+background-color: var(--theme-color-two);
+color: #FFF;
+padding: 20px 0;
+position: absolute;
+width: 100%;
+left: 0;
+background-color: #474787;
+}
+
+footer .container {
+display: flex;
+justify-content: space-around;
+}
+
+
+footer .social-media {
+display: flex;
+}
+
+footer .social-media > div:not(:last-child) {
+margin-right: 20px;
+}
+
+footer .social-media a {
+color: #FFF;
+}
+
+/* ---------------------------------------- */
+/* ----------- Items List ----------------- */
+/* ---------------------------------------- */
+
+.items_list {
+color: #FFF;
+padding-bottom: 4%;
+display: flex;
+flex-direction: column;
+}
+
+.items_list .items_head {
+text-align: center;
+padding: 1%;
+}
+
+.items_list .items_head h2 {
+font-size: 30px;
+margin: 0 0 5px;
+color: white;
+}
+
+.items_list .items_head p {
+color:var(--text-second-color)
+}
+.categories{
+  display: flex;
+  flex-direction: column;
+}
+.categories .category{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+.categories .category .cat_tittle{
+  text-align: center;
+  background-color: #706fd3;
+}
+.categories .category .items{
+  display: flex;
+}
+.categories .category .items img{
+  width: 225px;
+  height: 225px;
+  margin: 10px;
+  border: 2px solid #706fd3;
+}
+#item-name,#likes{
+  text-align: center;
+}
