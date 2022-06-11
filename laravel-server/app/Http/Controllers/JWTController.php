@@ -46,7 +46,8 @@ class JWTController extends Controller
 
         return response()->json([
             'message' => 'User successfully registered',
-            'user' => $user
+            'user' => $user,
+            'token' => $this->respondWithToken(auth()->attempt($validator->validated()))
         ], 201);
     }
 
