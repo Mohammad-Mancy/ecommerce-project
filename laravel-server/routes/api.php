@@ -13,7 +13,7 @@ Route::group(['prefix' => 'v1'], function(){
         Route::post('/refresh', [JWTController::class, 'refresh']);
         Route::post('/profile', [JWTController::class, 'profile']);
         
-        Route::get('/all_items',[itemcontroller::class,'getAllItems']);
+        Route::get('/all_items/{id?}',[itemcontroller::class,'getAllItems']);
         Route::get('/all_category', [itemcontroller::class, 'getAllCategories']);
 
         Route::post('/add_item', [itemcontroller::class, 'addItem']);

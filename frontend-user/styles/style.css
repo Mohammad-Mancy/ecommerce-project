@@ -225,6 +225,7 @@ color:var(--text-second-color)
 }
 .categories .category .items{
   display: flex;
+  flex-wrap: wrap;
 }
 .categories .category .items img{
   width: 225px;

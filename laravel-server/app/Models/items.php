@@ -41,7 +41,7 @@ class items extends Model implements JWTSubject{
         'price',
         'image',
     ];
-    // public function categories(){
-    //     return $this->belongsTo(categories::class);
-    // }
+    public function categories(){
+        return $this->belongsTo(categories::class,'cat_id');
+    }
 }

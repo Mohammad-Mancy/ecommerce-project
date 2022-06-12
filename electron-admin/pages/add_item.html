@@ -2,11 +2,13 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';style-src 'self' 'unsafe-inline';">
     <link rel="stylesheet" href="../style.css">
     <title>Admin panel</title>
   </head>
   <body>
+    <a href="add_category.html"><button id="add-cat-itm">Add Category</button></a>
     <h2>Add new item</h2>
     <h3 id="status" style="color:rgb(90, 122, 122);;text-align:center;display:none;"></h3>
     <form>
@@ -21,6 +23,7 @@
         <div class="category"><br>
           <select name="category" id="categories">
             <option>category</option>
+            <option value="sport">sport</option>
           </select>
         </div>
         <div class="image">
@@ -31,5 +34,6 @@
           <input type="submit" value="upload item" id="upload-item">
         </div>
       </form>
+      <script src="../itmscript.js"></script>
   </body>
 </html>

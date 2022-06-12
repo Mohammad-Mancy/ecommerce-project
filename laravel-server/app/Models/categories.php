@@ -39,7 +39,7 @@ class categories extends Model implements JWTSubject{
     protected $fillable = [
         'category',
     ];
-    // public function items(){
-    //     return $this->hasMany(items::class);
-    // }
+    public function items(){
+        return $this->hasMany(items::class,'cat_id');
+    }
 }

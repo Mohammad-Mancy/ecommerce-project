@@ -182,4 +182,16 @@ body {
     margin-top: 10px;
     font-size: 14px;
   }
+#add-cat-itm{
+  width: 50%;
+  margin-left: 25%;
+  padding: 1%;
+  background-color: #706fd3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+#add-cat-itm:hover{
+  background-color: #474787;
+}
   
