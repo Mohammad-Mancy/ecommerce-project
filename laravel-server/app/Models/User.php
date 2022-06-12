@@ -31,6 +31,7 @@ class User extends Authenticatable implements JWTSubject
     {
         return [];
     }
+    
 
     /**
      * The attributes that are mass assignable.
@@ -62,4 +63,7 @@ class User extends Authenticatable implements JWTSubject
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function favourites(){
+        return $this->hasMany(favourites::class);
+    }
 }

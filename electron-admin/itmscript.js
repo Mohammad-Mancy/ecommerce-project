@@ -1,7 +1,6 @@
-console.log('hello')
+document.addEventListener('DOMContentLoaded', function() {
 document.getElementById("upload-item").addEventListener("click",  ()=>  {
-    const token = localStorage.getItem('access_token');
-    console.log('hello2')
+    console.log('hello2');
 
     var form = document.querySelector("form");
     var formdata = new FormData(form);
@@ -23,3 +22,4 @@ document.getElementById("upload-item").addEventListener("click",  ()=>  {
     })
   
     });
+});

@@ -2,15 +2,16 @@
   <head>
     <meta charset="UTF-8">
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Admin panel</title>
   </head>
   <body>
     <a href="add_category.html"><button id="add-cat-itm">Add Category</button></a>
     <h2>Add new item</h2>
-    <h3 id="status" style="color:rgb(90, 122, 122);;text-align:center;display:none;"></h3>
     <form>
         <div class="name">
           <label for="item-name">Name:</label><br>

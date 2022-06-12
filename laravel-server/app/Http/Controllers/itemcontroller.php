@@ -8,6 +8,7 @@ use App\models\items;
 use Illuminate\Http\Request;
 use App\Models\categories;
 use App\Models\favourites;
+use App\Models\User;
 
 class itemcontroller extends Controller
 {
@@ -140,6 +141,17 @@ class itemcontroller extends Controller
                 "status" => "Success"
             ], 200);
         }else{
+            return response()->json(['error' => 'Unauthorized'], 401);
+        }
+    }
+    public function deleteLike(Request $request){
+        if(auth()->user()){
+            favourites::where('user_id', '=', $request->user_id)->Where('item_id', '=', $request->item_id)->delete();
+            return response()->json([
+                "status" => "Success"
+            ], 200);
+        }
+        else{
             return response()->json(['error' => 'Unauthorized'], 401);
         }
     }

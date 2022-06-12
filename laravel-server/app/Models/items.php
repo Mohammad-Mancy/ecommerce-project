@@ -44,4 +44,7 @@ class items extends Model implements JWTSubject{
     public function categories(){
         return $this->belongsTo(categories::class,'cat_id');
     }
+    public function favourites(){
+        return $this->hasMany(favourites::class);
+    }
 }

@@ -41,5 +41,11 @@ class favourites extends Model implements JWTSubject{
         'favourite',
     ];
 
+    public function items(){
+        return $this->belongsTo(items::class,'item_id');
+    }
+    public function user(){
+        return $this->belongsTo(User::class,'user_id');
+    }
     
 }
