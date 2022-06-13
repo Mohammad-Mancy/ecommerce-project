@@ -1,5 +1,8 @@
 categories_container = document.querySelector(".container .items_list .categories")
 const token = localStorage.getItem('access_token');
+const user_id = localStorage.getItem('user_id');
+let array_image = []
+let array_item_key = []
 
 let itm = axios({
     method: "get",
@@ -43,6 +46,7 @@ itm.then(res => {
 
             let image = document.createElement('img');
             image.src = "../assets/images/"+item_div[prop].image 
+            image.className = "image"
 
             let price = document.createElement('p');
             price.className = "price" 
@@ -59,19 +63,42 @@ itm.then(res => {
             image_wrapper.appendChild(like)
 
             console.log(item_div[prop].item_name)
-            // your code
+            array_item_key.push(item_div[prop].id)
+
         }
     }
-    // for (let category in items_res) {
-    //     let i=0;
-    //     console.log(category)
-    //     cat = document.createElement('div');
-    //     cat.className = "category"
-    //     let cat_tittle = document.createElement('h3')
-    //     cat_tittle.className = "cat_tittle";
-    //     cat_tittle.textContent = items_res.category.categoryName;
-    //     console.log(items_res.category.categoryName)
-// }
+    let k =0
+    console.log(array_item_key)
+    console.log(array_item_key[k])
+    array_image=Array.from(document.querySelectorAll(".image"))
+    console.log(array_image)
+    
+    for (var fav in array_image){
+        console.log(array_image[fav])
+    //     //skip prototype 
+        if (!array_image.hasOwnProperty(fav)) continue;
+        
+        item_id = array_item_key[k]
+        array_image[fav].addEventListener('dblclick', function (e) {
+            var formdata = new FormData();
+            formdata.append('user_id',user_id)
+            console.log(user_id)
+            formdata.append('item_id',item_id)
+            console.log(item_id)
+            let like = axios({
+                method: "post",
+                url: 'http://127.0.0.1:8000/api/v1/add_like',
+                data: formdata,
+                headers: { Authorization: `Bearer `+token}
+                }).then(function (response){
+                    if (response.data.status == 'success') {
+                        alert('like')
+                    } else {
+                        alert("worng like")
+                    }})
+          });
+          k++
+    }
 });
 
     

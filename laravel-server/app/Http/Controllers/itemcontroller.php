@@ -12,32 +12,6 @@ use App\Models\User;
 
 class itemcontroller extends Controller
 {
-    // public function getAllItems($id = null){
-    //     if(auth()->user()){
-    //         $array_items=[];
-    //         if($id != null){
-    //             $item = Items::find($id);
-    //             array_push($array_items,$item);
-    //         }
-    //         else{
-    //                 $cats = Items::find(1)->categories->get();
-    //                 foreach ($cats as $cat) {
-    //                     $items =[];
-    //                     $items = Items::all()->where('cat_id', '=' , $cat->id);
-    //                     array_push($array_items,$items);
-    //                 }
-    //             }
-                
-    //             return response()->json([
-    //                 "status" => "Success",
-    //                 "items" => $array_items
-    //             ], 200);
-    //         }
-            
-    //     else{
-    //         return response()->json(['error' => 'Unauthorized'], 401);
-    //     }
-    //     }
     
     public function getAllItems($id = null){
         if(auth()->user()){
@@ -53,7 +27,7 @@ class itemcontroller extends Controller
                 
                 return response()->json([
                     "status" => "Success",
-                    "items" => $cats->groupBy('categoryName')
+                    "items" => $cats->groupBy('categoryName'),
                 ], 200);
             }
             

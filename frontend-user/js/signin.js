@@ -15,6 +15,7 @@ document.getElementById("btn-login").addEventListener("click",  ()=> {
         console.log(response.data)
         localStorage.setItem("access_token", access_token)
         localStorage.setItem('username', response.data.user.name)
+        localStorage.setItem("user_id", response.data.user.id)
         window.location.href = "./pages/main.html";
       }
       else {
